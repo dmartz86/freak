@@ -1,0 +1,15 @@
+.container(ng-controller="TransitionController")
+  .row
+    .col-md-1
+      a.btn.btn-default.switch(ng-click="prevPhoto()") <
+
+    .col-md-10#focusPhoto(align="center")
+      include transitions/questions
+
+    .col-md-1
+      a.btn.btn-default.switch(ng-click="nextPhoto()") >
+  .row
+    hr.col-md-12
+    .col-md-4
+    a.col-md-4.btn.btn-primary Next
+    .col-md-4

@@ -1,0 +1,14 @@
+#gender
+  .row
+    a.btn(ng-repeat="q in questions", ng-class="'col-md' + q.width", )
+      span(ng-bind="q.id")
+      div(ng-if="q.type == 'info'")
+        include types/panel/info
+      div(ng-if="q.type == 'danger'")
+        include types/panel/danger
+      div(ng-if="q.type == 'warning'")
+        include types/panel/warning
+      div(ng-if="q.type == 'primary'")
+        include types/panel/primary
+      div(ng-if="q.type == 'success'")
+        include types/panel/success
